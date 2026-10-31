@@ -384,7 +384,7 @@
 
 @media (prefers-reduced-motion: reduce) {
   .mascot-eyes circle {
-    animation: mascot-blink-reduced 8s steps(1, end) infinite;
+    animation: mascot-blink-reduced 4.8s steps(1, end) infinite;
   }
 
   .mascot-steam {
@@ -392,6 +392,6 @@
   }
 
   .role-cursor {
-    animation: none;
+    animation: role-cursor-blink 2s steps(2, end) infinite;
   }
 }
