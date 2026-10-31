@@ -255,8 +255,30 @@
 }
 
 @media (prefers-reduced-motion: reduce) {
+  @keyframes pixel-loader-pulse {
+    0%,
+    100% {
+      opacity: 0.35;
+    }
+    50% {
+      opacity: 1;
+    }
+  }
+
   .pixel-loader span {
-    opacity: 0.8;
+    animation: pixel-loader-pulse 1.4s ease-in-out infinite;
+  }
+
+  .pixel-loader span:nth-child(2) {
+    animation-delay: 200ms;
+  }
+
+  .pixel-loader span:nth-child(3) {
+    animation-delay: 400ms;
+  }
+
+  .pixel-loader span:nth-child(4) {
+    animation-delay: 600ms;
   }
 }
 
@@ -341,18 +363,6 @@
   }
 }
 
-@keyframes mascot-blink-reduced {
-  0%,
-  48%,
-  54%,
-  100% {
-    opacity: 1;
-  }
-  51% {
-    opacity: 0;
-  }
-}
-
 @keyframes mascot-steam-reduced {
   0%,
   100% {
@@ -384,7 +394,7 @@
 
 @media (prefers-reduced-motion: reduce) {
   .mascot-eyes circle {
-    animation: mascot-blink-reduced 4.8s steps(1, end) infinite;
+    animation: mascot-blink 4.2s ease-in-out infinite;
   }
 
   .mascot-steam {
