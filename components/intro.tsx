@@ -19,7 +19,7 @@ export function Intro() {
             >
               <path d="M15 19H8Q1 19 1 26V44Q1 50 7 50H15" />
             </svg>
-            <h1 className="hero-heading flex flex-wrap items-center gap-x-2 font-mono text-2xl font-bold italic tracking-tight sm:text-[1.75rem]">
+            <h1 className="hero-heading flex flex-nowrap items-center gap-x-2 whitespace-nowrap font-mono text-[clamp(1rem,5vw,1.5rem)] font-bold italic tracking-tight sm:text-[1.75rem]">
               <span>{"Hey, I'm Krushal"}</span>
               <AnimatedMascot />
             </h1>
