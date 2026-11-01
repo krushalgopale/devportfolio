@@ -348,45 +348,16 @@
   body {
     @apply bg-background text-foreground;
   }
-}
 
-:root {
-  transition:
-    --background 400ms ease,
-    --foreground 400ms ease,
-    --card 400ms ease,
-    --card-foreground 400ms ease,
-    --popover 400ms ease,
-    --popover-foreground 400ms ease,
-    --primary 400ms ease,
-    --primary-foreground 400ms ease,
-    --secondary 400ms ease,
-    --secondary-foreground 400ms ease,
-    --muted 400ms ease,
-    --muted-foreground 400ms ease,
-    --accent 400ms ease,
-    --accent-foreground 400ms ease,
-    --destructive 400ms ease,
-    --input 400ms ease,
-    --ring 400ms ease,
-    --chart-1 400ms ease,
-    --chart-2 400ms ease,
-    --chart-3 400ms ease,
-    --chart-4 400ms ease,
-    --chart-5 400ms ease,
-    --sidebar 400ms ease,
-    --sidebar-foreground 400ms ease,
-    --sidebar-primary 400ms ease,
-    --sidebar-primary-foreground 400ms ease,
-    --sidebar-accent 400ms ease,
-    --sidebar-accent-foreground 400ms ease,
-    --sidebar-border 400ms ease,
-    --sidebar-ring 400ms ease;
-}
-
-@media (prefers-reduced-motion: reduce) {
-  :root {
-    transition: none;
+  @media (prefers-reduced-motion: no-preference) {
+    body,
+    body * {
+      transition:
+        color 400ms ease,
+        background-color 400ms ease,
+        border-color 400ms ease,
+        text-decoration-color 400ms ease;
+    }
   }
 }
 
@@ -407,6 +378,7 @@
   inset: 0;
   margin: auto;
   transition:
+    color 400ms ease,
     opacity 400ms ease,
     transform 400ms cubic-bezier(0.2, 0.7, 0.3, 1);
 }
@@ -446,35 +418,6 @@
 @media (prefers-reduced-motion: reduce) {
   .theme-toggle-icon {
     transition: none;
-  }
-}
-
-@media (hover: none) and (pointer: coarse) and (prefers-reduced-motion: no-preference) {
-  :root {
-    transition: none;
-  }
-
-  body {
-    transition: background-color 400ms ease;
-  }
-
-  main,
-  main * {
-    transition-property:
-      color,
-      background-color,
-      border-color,
-      text-decoration-color,
-      opacity,
-      transform;
-    transition-duration: 400ms;
-    transition-timing-function: ease;
-  }
-
-  .theme-toggle-icon {
-    transition:
-      opacity 400ms ease,
-      transform 400ms cubic-bezier(0.2, 0.7, 0.3, 1);
   }
 }
 
