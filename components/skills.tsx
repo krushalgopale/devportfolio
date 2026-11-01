@@ -46,7 +46,7 @@ export function Skills() {
         {skills.map(({ name, icon, image, dark }) => (
           <li
             key={name}
-            className="flex min-w-[5.2rem] flex-1 basis-[5.2rem] flex-col items-center justify-center gap-1.5 rounded-md border border-border/80 px-2 py-2 text-center"
+            className="theme-border flex min-w-[5.2rem] flex-1 basis-[5.2rem] flex-col items-center justify-center gap-1.5 rounded-md border px-2 py-2 text-center"
             style={
               {
                 "--brand": `#${icon.hex}`,

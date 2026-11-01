@@ -18,10 +18,16 @@ export function ThemeToggle() {
       type="button"
       onClick={toggle}
       aria-label="Toggle dark mode"
-      className="inline-flex size-9 shrink-0 items-center justify-center rounded-md text-muted-foreground transition-colors hover:bg-muted hover:text-foreground focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ring"
+      className="theme-toggle inline-flex size-9 shrink-0 items-center justify-center rounded-md text-muted-foreground hover:bg-muted hover:text-foreground focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ring"
     >
-      <Sun className="hidden size-4 dark:block" aria-hidden="true" />
-      <Moon className="size-4 dark:hidden" aria-hidden="true" />
+      <Sun
+        className="theme-toggle-icon theme-toggle-sun size-4"
+        aria-hidden="true"
+      />
+      <Moon
+        className="theme-toggle-icon theme-toggle-moon size-4"
+        aria-hidden="true"
+      />
     </button>
   )
 }

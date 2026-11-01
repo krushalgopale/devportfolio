@@ -1,8 +1,8 @@
-import { Globe, Pin } from "lucide-react";
+import { ArrowUpRight, Globe, Pin } from "lucide-react";
 import { GitHubIcon } from "@/components/brand-icons";
 import { IconLink } from "@/components/icon-link";
 import { Section } from "@/components/section";
-import { projects } from "@/lib/site";
+import { projects, site } from "@/lib/site";
 
 export function Projects() {
   return (
@@ -12,7 +12,10 @@ export function Projects() {
           <li key={project.name} className="flex flex-col gap-1">
             <div className="flex flex-wrap items-center justify-between gap-x-4 gap-y-0.5">
               <h3 className="flex items-center gap-1.5 text-[15px] font-medium">
-                <Pin aria-hidden="true" className="size-3.5 shrink-0 -rotate-45 text-muted-foreground" />
+                <Pin
+                  aria-hidden="true"
+                  className="size-3.5 shrink-0 -rotate-45 text-muted-foreground"
+                />
                 {project.name}
               </h3>
               <div className="flex items-center gap-4 text-[13px]">
@@ -38,6 +41,19 @@ export function Projects() {
           </li>
         ))}
       </ul>
+      <a
+        href={site.github}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="view-more-link group inline-flex w-fit items-center gap-1 pt-1 text-xs text-muted-foreground hover:text-foreground focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ring"
+      >
+        <span>view more</span>
+        <ArrowUpRight
+          aria-hidden="true"
+          className="size-3 opacity-70 transition duration-200 group-hover:-translate-y-0.5 group-hover:translate-x-0.5 group-hover:opacity-100 motion-reduce:transition-none"
+        />
+        <span className="sr-only">(opens in a new tab)</span>
+      </a>
     </Section>
   );
 }

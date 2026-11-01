@@ -25,20 +25,20 @@ export function IconLink({
       {...(external ? { target: '_blank', rel: 'noopener noreferrer' } : {})}
       style={hoverColor ? ({ '--hover': hoverColor } as React.CSSProperties) : undefined}
       className={cn(
-        'group inline-flex items-center gap-1.5 rounded-sm py-1 text-foreground/90 transition-colors hover:text-foreground',
+        'group inline-flex items-center gap-1.5 rounded-sm py-1 text-foreground/90 hover:text-foreground',
         'focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ring',
         className,
       )}
     >
       <span
         className={cn(
-          'flex size-4 items-center justify-center text-muted-foreground transition-colors duration-200 [&>svg]:size-4',
+          'flex size-4 items-center justify-center text-muted-foreground [&>svg]:size-4',
           hoverColor ? 'group-hover:text-(--hover)' : 'group-hover:text-foreground',
         )}
       >
         {icon}
       </span>
-      <span className="underline decoration-border decoration-1 underline-offset-4 transition-colors group-hover:decoration-foreground/60">
+      <span className="theme-underline underline decoration-1 underline-offset-4 group-hover:decoration-foreground/60">
         {children}
       </span>
       {external && (

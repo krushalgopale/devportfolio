@@ -12,10 +12,10 @@ export function Section({
   bordered?: boolean
 }) {
   return (
-    <section aria-labelledby={id} className={bordered ? 'rounded-xl border border-border/80 px-4 py-4 sm:px-5' : 'flex flex-col gap-2'}>
+    <section aria-labelledby={id} className={bordered ? 'theme-border rounded-xl border px-4 py-4 sm:px-5' : 'flex flex-col gap-2'}>
       {bordered ? (
         <div className="flex flex-col gap-2.5">
-          <h2 id={id} className="border-b border-border/80 pb-2 text-base font-semibold tracking-tight">
+          <h2 id={id} className="theme-border border-b pb-2 text-base font-semibold tracking-tight">
             {title}
           </h2>
           {children}
