@@ -6,7 +6,7 @@ import { site } from "@/lib/site";
 
 export function About() {
   return (
-    <Section id="about" title="About Me" bordered>
+    <Section id="about" title="About me" bordered>
       <p className="text-sm leading-normal text-muted-foreground text-pretty sm:text-[15px]">
         {
           "I'm a backend-focused software engineer interested in building applications, dabbling in distributed systems and AI, and understanding the engineering behind them. Most recently, I interned as a Backend Developer at KrtrimaIQ Cognitive Solutions, where I built timesheet and asset management modules for an intranet portal and automated attendance tracking with the Microsoft Graph API."
@@ -18,7 +18,7 @@ export function About() {
 
 export function Contact() {
   return (
-    <Section id="contact" title="Contact Me">
+    <Section id="contact" title="Contact me">
       <p className="text-sm text-muted-foreground sm:text-[15px]">
         Feel free to reach out.
       </p>

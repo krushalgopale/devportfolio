@@ -14,8 +14,7 @@ const jetbrains = JetBrains_Mono({
 
 export const metadata: Metadata = {
   title: "Krushal Gopale",
-  description:
-    "Krushal Gopale is a backend-focused software engineer building REST APIs and systems with Go, Python (Django), and PostgreSQL.",
+  description: "Hey! checkout my portfolio.",
   generator: "v0.app",
   icons: {
     icon: [
