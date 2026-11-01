@@ -41,7 +41,7 @@ const skills: Skill[] = [
 
 export function Skills() {
   return (
-    <Section id="skills" title="Tech Stacks" bordered>
+    <Section id="skills" title="Tech Stack" bordered>
       <ul className="flex flex-wrap gap-2">
         {skills.map(({ name, icon, image, dark }) => (
           <li
