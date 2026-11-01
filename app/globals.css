@@ -349,15 +349,13 @@
     @apply bg-background text-foreground;
   }
 
-  @media (prefers-reduced-motion: no-preference) {
-    body,
-    body * {
-      transition:
-        color 400ms ease,
-        background-color 400ms ease,
-        border-color 400ms ease,
-        text-decoration-color 400ms ease;
-    }
+  body,
+  body * {
+    transition:
+      color 400ms ease,
+      background-color 400ms ease,
+      border-color 400ms ease,
+      text-decoration-color 400ms ease;
   }
 }
 
@@ -416,6 +414,11 @@
 }
 
 @media (prefers-reduced-motion: reduce) {
+  body,
+  body * {
+    transition: none !important;
+  }
+
   .theme-toggle-icon {
     transition: none;
   }
