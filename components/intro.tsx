@@ -17,14 +17,21 @@ export function Intro() {
               viewBox="0 0 16 62"
               preserveAspectRatio="none"
             >
-              <path d="M15 19H8Q1 19 1 26V44Q1 50 7 50H15" />
+              <path
+                className="hero-prompt-connector-light"
+                d="M15 19H8Q1 19 1 26V44Q1 50 7 50H15"
+              />
+              <path
+                className="hero-prompt-connector-dark"
+                d="M15 19H8Q1 19 1 26V44Q1 50 7 50H15"
+              />
             </svg>
             <h1 className="hero-heading flex flex-nowrap items-center gap-x-2 whitespace-nowrap font-mono text-[clamp(1rem,5vw,1.5rem)] font-bold italic tracking-tight sm:text-[1.75rem]">
               <span>{"Hey, I'm Krushal"}</span>
               <AnimatedMascot />
             </h1>
             <p className="hero-role text-base text-muted-foreground">
-              <span className="font-mono text-sm not-italic text-[#98c379]">
+              <span className="hero-prompt-symbol font-mono text-sm not-italic text-[#98c379]">
                 $
               </span>
               <span className="font-sans not-italic">
