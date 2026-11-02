@@ -19,7 +19,7 @@ export function About() {
 export function Contact() {
   return (
     <Section id="contact" title="Contact">
-      <p className="text-sm text-muted-foreground sm:text-[15px]">Say hello!</p>
+      <p className="text-sm text-muted-foreground sm:text-[15px]">Ping me!</p>
       <div className="flex flex-wrap items-center gap-x-5 gap-y-1 text-sm">
         <IconLink
           href={`mailto:${site.email}`}

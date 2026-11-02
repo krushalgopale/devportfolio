@@ -31,7 +31,7 @@ export function Intro() {
               <AnimatedMascot />
             </h1>
             <p className="hero-role text-base text-muted-foreground">
-              <span className="hero-prompt-symbol font-mono text-sm not-italic text-[#98c379]">
+              <span className="hero-prompt-symbol font-mono text-lg not-italic text-[#659C35]">
                 $
               </span>
               <span className="font-sans not-italic">
